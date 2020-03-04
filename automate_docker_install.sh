@@ -19,7 +19,13 @@ sudo usermod -aG docker delladmin
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo docker images
-mkdir intake-service
 sudo docker-compose --version
 sudo docker ps
 sudo docker run hello-world
+# Install Azure cli
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+# Login to Container Registry without using passwords
+az login --identity
+az acr login --name intakecontainerregistry
+mkdir intake-service
+cd intake-service
