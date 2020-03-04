@@ -1,0 +1,7 @@
+version: '3.4'
+
+services:
+  clamav-server:
+    image: quay.io/ukhomeofficedigital/clamav
+  webapp:
+    image: intakecontainerregistry.azurecr.io/intake-service:1.0.2
