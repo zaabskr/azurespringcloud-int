@@ -22,3 +22,4 @@ sudo docker images
 mkdir intake-service
 sudo docker-compose --version
 sudo docker ps
+sudo docker run hello-world
