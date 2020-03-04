@@ -31,4 +31,4 @@ mkdir intake-service
 cd intake-service
 curl -k 'https://raw.githubusercontent.com/zaabskr/azurespringcloud-int/master/intake-docker-compose.yml' -o intake-docker-compose.yml
 cat intake-docker-compose.yml
-sudo docker-compose -f intake-docker-compose.yml up
+sudo docker-compose -f intake-docker-compose.yml up -d
