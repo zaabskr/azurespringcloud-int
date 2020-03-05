@@ -3,5 +3,9 @@ version: '3.4'
 services:
   clamav-server:
     image: quay.io/ukhomeofficedigital/clamav
+    ports:
+      - "3310:3310"
   webapp:
     image: intakecontainerregistry.azurecr.io/intake-service:1.0.2
+    ports:
+      - "8080:80"
